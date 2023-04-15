@@ -15,3 +15,12 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const ingredientList = document.getElementById('ingredients');
+
+for (let i = 0; i < ingredients.length; i++) {
+  const li = document.createElement('li');
+  li.textContent = ingredients[i];
+  li.classList.add('item');
+  ingredientList.appendChild(li);
+}
