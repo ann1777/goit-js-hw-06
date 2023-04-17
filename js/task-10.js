@@ -21,14 +21,6 @@ function createCollection() {
     collection.removeChild(collection.firstChild);
   }
 
-  // Create a new element for each item in the collection
-  /* const numElements = parseInt(input.value);
-  for (let i = 1; i <= numElements; i++) {
-    const listItem = document.createElement("li");
-    listItem.textContent = `Item ${i}`;
-    collection.appendChild(listItem);
-  } */
-
   // Append the collection to the document
   document.body.appendChild(collection);
 }
