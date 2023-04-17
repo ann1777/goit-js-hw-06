@@ -22,12 +22,12 @@ function createCollection() {
   }
 
   // Create a new element for each item in the collection
-  const numElements = parseInt(input.value);
+  /* const numElements = parseInt(input.value);
   for (let i = 1; i <= numElements; i++) {
     const listItem = document.createElement("li");
     listItem.textContent = `Item ${i}`;
     collection.appendChild(listItem);
-  }
+  } */
 
   // Append the collection to the document
   document.body.appendChild(collection);
@@ -53,6 +53,7 @@ return `#${Math.floor(Math.random() * 16777215)
 function createBoxes(amount) {
     const boxesDiv = document.querySelector("#boxes");
     let boxSize = 30;
+    destroyBoxes();
     
     for (let i = 0; i < amount; i++) {
       const newBox = document.createElement("div");

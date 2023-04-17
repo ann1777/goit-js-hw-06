@@ -26,6 +26,7 @@ loginForm.addEventListener('submit', (event) => {
 
   if (emailInput.value.trim() === '' || passwordInput.value.trim() === '') {
     alert('Please fill in all fields.');
+  
   } else {
     const formData = {
       email: emailInput.value,
@@ -34,6 +35,6 @@ loginForm.addEventListener('submit', (event) => {
 
     console.log(formData);
 
-    loginForm.reset();
+    event.currentTarget.reset();
   }
 });
